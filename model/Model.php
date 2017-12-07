@@ -1,5 +1,5 @@
 <?php
-require_once('../controller/NewsGateway.php');
+require_once('../dal/NewsGateway.php');
 require_once('metier/News.php');
 /**
  * Created by PhpStorm.

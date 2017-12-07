@@ -1,5 +1,5 @@
 <?php
-require_once('/home/etud/clguilbert/public_html/Projet/model/Model.php');
+require_once('../model/Model.php');
 /**
  * Created by PhpStorm.
  * User: clguilbert
@@ -10,18 +10,18 @@ class CtrlUser
 {
 
     private $model;
+
     public function __construct()
     {
-
-        $this->voirNews();
         $model=new Model();
+        $this->acceuil();
+
+
     }
 
-    public function voirNews()
+    public function acceuil()
     {
-
-        $tabnews = $this->model->voirNews();
-        require_once('../vues/acceuil.php');
+        $tabnews = array($this->model->voirNews());
     }
     public function connexion()
     {
@@ -33,6 +33,6 @@ class CtrlUser
 
     }
 
-}
 
-$ctrlUser=new CtrlUser();
+
+}
