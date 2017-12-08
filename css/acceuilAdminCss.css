@@ -1,0 +1,66 @@
+h2{
+    text-align: center;
+
+}
+
+#titre{
+    text-align: center;
+}
+
+
+.textField{
+    position: relative;
+    right: 10%;
+}
+#conteneur{
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid darkblue;
+
+    justify-content: space-between;
+}
+#conteneurleft{
+    padding-top: 5%;
+    display: block;
+    border: 2px solid darkblue;
+}
+.categ{
+    margin: 2%;
+    position: relative;
+    top: -10%;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+#licateg{
+    padding: 10px;
+    margin: 15px;
+
+    height: 30%;
+}
+#ajout{
+    border: 2px solid yellow;
+}
+.list-group-item{
+    margin: 5px;
+    text-align: center;
+}
+.listenews{
+    position: relative;
+    width: 60%;
+    border: 1px solid green;
+}
+.top{
+    margin-right: 2%;
+    border: 1px solid pink;
+
+}
+
+.page{
+    position:relative;
+}
+#page{
+    position: absolute;
+    right: 40%;
+    left: 40%;
+}
