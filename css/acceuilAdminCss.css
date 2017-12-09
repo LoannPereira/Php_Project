@@ -2,65 +2,71 @@ h2{
     text-align: center;
 
 }
-
+header{
+    display: block;
+}
 #titre{
     text-align: center;
+
 }
-
-
+#connexion{
+    position:relative;
+    width: 15%;
+    padding-left:2%;
+}
 .textField{
-    position: relative;
-    right: 10%;
+
 }
 #conteneur{
-    padding-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid darkblue;
 
+    display: flex;
     justify-content: space-between;
+
 }
-#conteneurleft{
-    padding-top: 5%;
-    display: block;
-    border: 2px solid darkblue;
-}
-.categ{
-    margin: 2%;
-    position: relative;
-    top: -10%;
-    border: 2px solid green;
-    border-radius: 10px;
+#categ{
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    margin: 10px;
 }
 #licateg{
     padding: 10px;
     margin: 15px;
-
     height: 30%;
 }
-#ajout{
-    border: 2px solid yellow;
+
+
+#listenews{
+    display: inline-block;
+    width: 60%;
+    height: 70%;
+    margin-top: -10%;
+}
+#top{
+    margin-right: 2%;
+    display: inline-block;
+    width: 15%;
+
 }
 .list-group-item{
     margin: 5px;
     text-align: center;
 }
-.listenews{
-    position: relative;
-    width: 60%;
-    border: 1px solid green;
+#ajout{
+    display: inline-block;
 }
-.top{
-    margin-right: 2%;
-    border: 1px solid pink;
+#nbNews{
+    display: inline-flex;
+    position: absolute;
+    right:30px;
+    padding: 10px;
 
 }
 
-.page{
-    position:relative;
-}
 #page{
     position: absolute;
-    right: 40%;
-    left: 40%;
+    width: 60%;
+    left: 20%;
+    text-align: center;
+
 }

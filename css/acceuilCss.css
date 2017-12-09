@@ -10,7 +10,6 @@ form{
     position: relative;
     width: 20%;
     padding-left: 10px;
-    border: 2px solid darkblue;
 }
 #submit{
     position: absolute;
@@ -25,13 +24,11 @@ position: relative;
     padding-top: 5%;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid darkblue;
 
     justify-content: space-between;
 }
 .categ{
     margin-left: 2%;
-    border: 2px solid darkblue;
     border-radius: 10px;
 }
 #licateg{
@@ -48,11 +45,9 @@ position: relative;
 .listenews{
     position: relative;
     width: 60%;
-    border: 1px solid green;
 }
 .top{
     margin-right: 2%;
-    border: 1px solid pink;
 
 }
 
