@@ -1,5 +1,5 @@
 <?php
-require_once('../model/Model.php');
+require_once('../model/MdlAdmin.php');
 /**
  * Created by PhpStorm.
  * User: clguilbert
@@ -15,6 +15,9 @@ class CtrlAdmin
     }
 
     public function isAdmin(){
+        //METHODE A APPELER DE MDL ADMIN
+
+
         /**if (isset $_SESSION['login"] && isset $_SESSION['role']){
          * $login=Nettoyer::nettoyer_string($_SESSION["login"]);
          * $role=Nettoyer::nettoyer_string($_SESSION["role"]);

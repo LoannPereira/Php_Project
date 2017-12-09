@@ -1,5 +1,6 @@
 <?php
-require_once('../model/metier/Connection.php');
+require_once('Connection.php');
+require_once('../model/metier/News.php');
 /**
  * Created by PhpStorm.
  * User: clguilbert
@@ -44,7 +45,7 @@ class NewsGateway
 
     public function recherche(string $titre)
     {
-        require_once('News.php');
+
         $query = "Select * FROM news Where(titre=:titre)";
         $this->getCon()->executeQuery($query, array(
             ':titre' => array($titre, PDO::PARAM_STR)
