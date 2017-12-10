@@ -1,14 +1,16 @@
 <?php
-require_once('Connection.php');
-require_once('../model/metier/Admin.php');
 /**
  * Created by PhpStorm.
- * User: clguilbert
- * Date: 09/12/17
- * Time: 10:32
+ * User: pereiraloann
+ * Date: 10/12/2017
+ * Time: 15:19
  */
+
 class AdminGateway
 {
+    /**
+     * @return Connection
+     */
     public function getCon(): Connection
     {
         return $this->con;
@@ -17,35 +19,52 @@ class AdminGateway
 
     public function __construct()
     {
-        $this->con=new Connection('mysql:host=hina;dbname=dbclguilbert', 'clguilbert', 'clguilbert');
+        $this->con=new Connection('mysql:host=hostname;dbname=dblopereira2', 'root', '1234');
     }
 
-    public function insert(string $login, string $mdp){
-        $query="INSERT into admin VALUES (:login,:mdp)";
-        $this->getCon()->executeQuery($query, array(
-            ':login'=>array($login,PDO::PARAM_STR),
-            ':mdp'=>array(password_hash($mdp,PASSWORD_DEFAULT),PDO::PARAM_STR) //Hash a faire dans le controller
-        ));
-    }
 
-    public function delete(string $login){
-        $query="DELETE FROM admin WHERE(login=:login)";
-        $this->getCon()->executeQuery($query, array(
-            ':login'=>array($login,PDO::PARAM_STR)
-        ));
-    }
 
-    public function authentificate(string $login, string $mdp){
-        $query = "Select * FROM admin Where(login=:login)";
+    public  function connexionAdmin(string $pseudo,string $mdp)
+    {
+        require_once('Admin.php');
+        $query = "Select * FROM admin Where(pseudo=:pseudo)";
         $this->getCon()->executeQuery($query, array(
-            ':login' => array($login, PDO::PARAM_STR)
+            ':pseudo' => array($pseudo, PDO::PARAM_STR)
         ));
-        $results =$this->getCon()->getResults();
-        if($results==null){
-            //ERREUR 403 ACCES FORBIDDEN
-            echo "ERROR 403 access forbidden";
-            return 1;
+        $resultspseudo =$this->getCon()->getResults();
+        foreach ($resultspseudo as $row) {
+            if($row['pseudo']==NULL){
+                return False;
+            }
+            else{
+                $pseudo=$row['pseudo'];
+                $query = "SELECT mdp FROM admin WHERE pseudo LIKE $pseudo ORDER BY pseudo DESC";
+                $this->getCon()->executeQuery($query, array(
+                ':mdp' => array($mdp, PDO::PARAM_STR)
+            ));
+                $resultsmdp =$this->getCon()->getResults();
+                foreach ($resultsmdp as $rowi) {
+                    if ($rowi['mdp'] == NULL) {
+                        return False;
+                    } else {
+                        return TRUE;
+                    }
+                }
+            }
+
+
         }
-        return 0;
+
+
     }
+
+    public function voirNews()
+    {
+        $query = "SELECT * FROM news;";
+        $st = $this->getCon()->executeQuery($query,array());
+        $results = $st->fetchall();
+        return $results;
+    }
+
+
 }
