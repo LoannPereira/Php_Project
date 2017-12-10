@@ -6,11 +6,13 @@ require_once('../model/Model.php');
  * Date: 25/11/17
  * Time: 11:51
  */
+
+
+
 class CtrlUser
 {
 
     private $model;
-
     public function __construct()
     {
         $model=new Model();
@@ -36,3 +38,4 @@ class CtrlUser
 
 
 }
+
