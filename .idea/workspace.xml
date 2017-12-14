@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42fc5e4c-0213-4e50-87dc-e24288ebf85d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/metier/Admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/CtrlAdmin.php" afterPath="$PROJECT_DIR$/controller/CtrlAdmin.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/Filtrage.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/Validation.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/config/routes.php" afterPath="$PROJECT_DIR$/config/routes.php" />
+      <change beforePath="$PROJECT_DIR$/controller/CtrlAdmin.php" afterPath="$PROJECT_DIR$/controller/CtrlAdmin.php" />
+      <change beforePath="$PROJECT_DIR$/controller/CtrlUser.php" afterPath="$PROJECT_DIR$/controller/CtrlUser.php" />
+      <change beforePath="$PROJECT_DIR$/controller/FrontController.php" afterPath="$PROJECT_DIR$/controller/FrontController.php" />
+      <change beforePath="$PROJECT_DIR$/dal/AdminGateway.php" afterPath="$PROJECT_DIR$/dal/AdminGateway.php" />
+      <change beforePath="$PROJECT_DIR$/documents/UseCase PHP.mdj" afterPath="$PROJECT_DIR$/documents/UseCase PHP.mdj" />
+      <change beforePath="$PROJECT_DIR$/model/MdlAdmin.php" afterPath="$PROJECT_DIR$/model/MdlAdmin.php" />
+      <change beforePath="$PROJECT_DIR$/model/Model.php" afterPath="$PROJECT_DIR$/model/Model.php" />
+      <change beforePath="$PROJECT_DIR$/vues/acceuil.php" afterPath="$PROJECT_DIR$/vues/acceuil.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,38 +23,136 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CtrlAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/CtrlAdmin.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model/metier/Admin.php">
+      <file leaf-file-name="MdlAdmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/MdlAdmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrontController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/FrontController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CtrlUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/CtrlUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsGateway.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dal/NewsGateway.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="41" />
+              <folding>
+                <marker date="1512847976145" expanded="true" signature="604:673" ph="INSERT into news... " />
+                <marker date="1512847976145" expanded="true" signature="1108:1144" ph="DELETE FROM " />
+                <marker date="1512847976145" expanded="true" signature="1342:1380" ph="Select * FRO... news" />
+                <marker date="1512847976145" expanded="true" signature="1866:1884" ph="SELECT * FRO... news" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminGateway.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dal/AdminGateway.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <marker date="1513274523617" expanded="true" signature="526:567" ph="Select * FRO... admin" />
+                <marker date="1513274523617" expanded="true" signature="963:1031" ph="SELECT mdp F... admin" />
+                <marker date="1513274523617" expanded="true" signature="1564:1582" ph="SELECT * FRO... news" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="acceuil.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/acceuil.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1302">
+              <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+              <folding>
+                <marker date="1513274592345" expanded="true" signature="627:4123" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="634:791" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="798:4115" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="807:1449" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="939:1439" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="972:1139" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="1176:1354" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="1470:3393" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="1495:1965" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="1586:1950" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="1994:2600" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="2012:2065" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="2623:3386" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="2696:3371" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="3426:4072" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="3464:4053" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="3485:3643" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="3538:3621" ph="..." />
+                <marker date="1513274592345" expanded="false" signature="3585:3592" ph="«" />
+                <marker date="1513274592345" expanded="true" signature="3879:4033" ph="..." />
+                <marker date="1513274592345" expanded="true" signature="3928:4011" ph="..." />
+                <marker date="1513274592345" expanded="false" signature="3975:3982" ph="»" />
+                <marker date="1513274592345" expanded="true" signature="4096:4107" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/Model.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="News.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/metier/News.php">
+      <file leaf-file-name="Visitor.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/model/Visitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="42">
+              <caret line="16" column="69" lean-forward="true" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hash</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +161,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/model/metier/Admin.php" />
+        <option value="$USER_HOME$/Desktop/NewsFeed-master/controllers/UserController.php" />
+        <option value="$USER_HOME$/Desktop/NewsFeed-master/controllers/AdminController.php" />
+        <option value="$USER_HOME$/Desktop/NewsFeed-master/DAL/Validation.php" />
+        <option value="$USER_HOME$/Desktop/NewsFeed-master/model/AdminModel.php" />
+        <option value="$USER_HOME$/Desktop/NewsFeed-master/DAL/Cleaner.php" />
+        <option value="C:/wamp64/www/NewsFeed-master/views/Home.php" />
+        <option value="$PROJECT_DIR$/config/Validation.php" />
+        <option value="$PROJECT_DIR$/config/Filtrage.php" />
+        <option value="$PROJECT_DIR$/config/routes.php" />
+        <option value="$PROJECT_DIR$/controller/CtrlAdmin.php" />
+        <option value="$PROJECT_DIR$/model/MdlAdmin.php" />
+        <option value="$PROJECT_DIR$/model/Model.php" />
+        <option value="$PROJECT_DIR$/controller/CtrlUser.php" />
+        <option value="$PROJECT_DIR$/controller/FrontController.php" />
+        <option value="$PROJECT_DIR$/dal/AdminGateway.php" />
+        <option value="$PROJECT_DIR$/vues/acceuil.php" />
       </list>
     </option>
   </component>
@@ -63,6 +185,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
@@ -87,6 +212,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,24 +223,32 @@
             <path>
               <item name="Php_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Php_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Php_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Php_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Php_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Php_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Php_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Php_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="metier" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Php_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Php_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vues" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -136,6 +270,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="42fc5e4c-0213-4e50-87dc-e24288ebf85d" name="Default" comment="" />
@@ -143,33 +280,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512678921062</updated>
-      <workItem from="1512678922484" duration="201000" />
+      <workItem from="1512678922484" duration="316000" />
+      <workItem from="1512805730564" duration="587000" />
+      <workItem from="1512848085874" duration="606000" />
+      <workItem from="1512927973083" duration="2302000" />
+      <workItem from="1513100478770" duration="1008000" />
+      <workItem from="1513183737583" duration="6841000" />
+      <workItem from="1513272161483" duration="2488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201000" />
+    <option name="totallyTimeSpent" value="14148000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -184,9 +328,69 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/model/metier/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/metier/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/acceuil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller/CtrlAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/metier/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/metier/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/acceuil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/CtrlAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -194,7 +398,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/metier/News.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
+        <state relative-caret-position="630">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="37" selection-end-column="5" />
           <folding />
         </state>
@@ -204,6 +408,314 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/metier/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/NewsFeed-master/config/config.php" />
+    <entry file="file://$USER_HOME$/Desktop/NewsFeed-master/controllers/FrontController.php" />
+    <entry file="file://$USER_HOME$/Desktop/NewsFeed-master/controllers/UserController.php" />
+    <entry file="file://$USER_HOME$/Desktop/NewsFeed-master/controllers/AdminController.php" />
+    <entry file="file://$USER_HOME$/Desktop/NewsFeed-master/DAL/Validation.php" />
+    <entry file="file://$USER_HOME$/Desktop/NewsFeed-master/model/AdminModel.php" />
+    <entry file="file://$USER_HOME$/Desktop/NewsFeed-master/DAL/Cleaner.php" />
+    <entry file="file://C:/wamp64/www/NewsFeed-master/model/UserModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp64/www/NewsFeed-master/controllers/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp64/www/NewsFeed-master/DAL/Cleaner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp64/www/NewsFeed-master/DAL/Validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="69" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp64/www/NewsFeed-master/model/AdminModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="38" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp64/www/NewsFeed-master/views/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp64/www/NewsFeed-master/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp64/www/NewsFeed-master/controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/metier/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Filtrage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp64/www/web/divers/parser/XmlParserExample1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp64/www/web/divers/parser/appel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/CtrlAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/MdlAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/controller/ControllerUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/vues/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/vues/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/vues/lists.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/CtrlUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/controller/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="73" column="40" lean-forward="true" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/controller/ControllerAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/controller/ControllerVisitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="91" column="21" lean-forward="true" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/model/Visitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="16" column="69" lean-forward="true" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/NewsGateway.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="41" />
+          <folding>
+            <marker date="1512847976145" expanded="true" signature="604:673" ph="INSERT into news... " />
+            <marker date="1512847976145" expanded="true" signature="1108:1144" ph="DELETE FROM " />
+            <marker date="1512847976145" expanded="true" signature="1342:1380" ph="Select * FRO... news" />
+            <marker date="1512847976145" expanded="true" signature="1866:1884" ph="SELECT * FRO... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/AdminGateway.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1513274523617" expanded="true" signature="526:567" ph="Select * FRO... admin" />
+            <marker date="1513274523617" expanded="true" signature="963:1031" ph="SELECT mdp F... admin" />
+            <marker date="1513274523617" expanded="true" signature="1564:1582" ph="SELECT * FRO... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/acceuil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1302">
+          <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding>
+            <marker date="1513274592345" expanded="true" signature="627:4123" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="634:791" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="798:4115" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="807:1449" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="939:1439" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="972:1139" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="1176:1354" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="1470:3393" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="1495:1965" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="1586:1950" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="1994:2600" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="2012:2065" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="2623:3386" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="2696:3371" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="3426:4072" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="3464:4053" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="3485:3643" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="3538:3621" ph="..." />
+            <marker date="1513274592345" expanded="false" signature="3585:3592" ph="«" />
+            <marker date="1513274592345" expanded="true" signature="3879:4033" ph="..." />
+            <marker date="1513274592345" expanded="true" signature="3928:4011" ph="..." />
+            <marker date="1513274592345" expanded="false" signature="3975:3982" ph="»" />
+            <marker date="1513274592345" expanded="true" signature="4096:4107" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Tests JavaFX/ToutDouxListe-master/vues/viewList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="46" column="18" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="46" selection-end-column="18" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding />
         </state>
       </provider>

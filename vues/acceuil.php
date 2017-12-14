@@ -30,7 +30,7 @@ function test_input($data)
 
 
 
-echo '
+?>
 <html>
 <head>
    <title>Top10News</title>
@@ -68,7 +68,22 @@ echo '
             <div>
                 <h2>Les News</h2>
             </div>
-            
+            <?php
+            if(isset($tabnews)) {
+                foreach ($tabnews as $row) {
+                    print "<br>";
+                    print $row['titre'];
+                    print "<br>";
+                    print $row['lien'];
+                    print "<br>";
+                    print "<br>";
+                    print "Fin Resultats";
+                }
+            }else{
+                var_dump($tabnews);
+                echo "<h2>Erreur d'appel dans la page</h2>";
+            }
+            ?>
         </div>
         <div id="top">
                 <h2>TOP 10</h2>

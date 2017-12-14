@@ -1,6 +1,7 @@
 <?php
 require_once('../dal/AdminGateway.php');
 require_once('metier/Admin.php');
+require_once('../config/Filtrage.php');
 
 /**
  * Created by PhpStorm.
@@ -25,24 +26,35 @@ class MdlAdmin
         return $this->gateway;
     }
 
-    public function isAdmin(){
+    public function isAdmin(){//DEPLACER DANS CONTROLLER
         if (isset($_SESSION['login'])&&isset($_SESSION['role'])){
-            $login=Nettoyer::nettoyer_string($_SESSION["login"]);
-            $role=Nettoyer::nettoyer_string($_SESSION["role"]);
+            $login=Filtrage::cleanString($_SESSION["login"]);
+            $role=Filtrage::cleanString($_SESSION["role"]);
             return new Admin($login, $role);}
             else return null;
     }
 
-    public function connection(){ //RECOIT DEUX STRINGS LOGIN ET MDP DEPUIS LA VUE acceuil
-        //1-NETTOYAGE => retourne deux strings loginPropre et mdpPropre
-        $authorize=$this->gateway->authentificate("admin","123");//Variables par défaut, a modifier
-        //hash et verify DANS CONTROLLER
-        //3 gérer session
-    }
+
 
     public function deconnexion(){
         session_unset();
         session_destroy();
         $_SESSION=array();
+    }
+
+    public function paramList(){
+        //Modifie le nombre de news affichés par page
+    }
+
+    public function voirSites(){
+        //Affiche la liste des sites dont on recoit les flux
+    }
+
+    public function addSite(){
+        //Ajoute un site à la liste des envoyeurs de news
+    }
+
+    public function delSite(){
+        //Enleve un site de la liste des envoyeurs de news
     }
 }

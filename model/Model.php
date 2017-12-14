@@ -31,4 +31,19 @@ class Model
         }
         return $tabnews;
     }
+
+    public function connection($login, $mdp){ //RECOIT DEUX STRINGS LOGIN ET MDP DEPUIS LA VUE acceuil
+
+        $authorize=$this->gateway->authentificate("admin","123");//Variables par défaut, a modifier
+        //hash et verify DANS CONTROLLER
+        if($authorize==1) return null;
+        $_SESSION['login']=$login;
+
+        return new Admin($login,$mdp);
+    }
+
+    public function deconnexion()
+    {
+
+    }
 }

@@ -5,18 +5,20 @@
  * Date: 10/12/2017
  * Time: 15:19
  */
-
+require_once('../model/metier/Admin.php');
 class AdminGateway
 {
+
+
+
     /**
      * @return Connection
      */
-    public function getCon(): Connection
+    public function getConnect()
     {
         return $this->con;
     }
     private $con;
-
     public function __construct()
     {
         $this->con=new Connection('mysql:host=hostname;dbname=dblopereira2', 'root', '1234');
@@ -26,12 +28,12 @@ class AdminGateway
 
     public  function connexionAdmin(string $pseudo,string $mdp)
     {
-        require_once('Admin.php');
+
         $query = "Select * FROM admin Where(pseudo=:pseudo)";
-        $this->getCon()->executeQuery($query, array(
+        $this->getConnect()->executeQuery($query, array(
             ':pseudo' => array($pseudo, PDO::PARAM_STR)
         ));
-        $resultspseudo =$this->getCon()->getResults();
+        $resultspseudo =$this->getConnect()->getResults();
         foreach ($resultspseudo as $row) {
             if($row['pseudo']==NULL){
                 return False;
@@ -39,10 +41,10 @@ class AdminGateway
             else{
                 $pseudo=$row['pseudo'];
                 $query = "SELECT mdp FROM admin WHERE pseudo LIKE $pseudo ORDER BY pseudo DESC";
-                $this->getCon()->executeQuery($query, array(
+                $this->getConnect()->executeQuery($query, array(
                 ':mdp' => array($mdp, PDO::PARAM_STR)
             ));
-                $resultsmdp =$this->getCon()->getResults();
+                $resultsmdp =$this->getConnect()->getResults();
                 foreach ($resultsmdp as $rowi) {
                     if ($rowi['mdp'] == NULL) {
                         return False;
@@ -61,7 +63,7 @@ class AdminGateway
     public function voirNews()
     {
         $query = "SELECT * FROM news;";
-        $st = $this->getCon()->executeQuery($query,array());
+        $st = $this->getConnect()->executeQuery($query,array());
         $results = $st->fetchall();
         return $results;
     }
