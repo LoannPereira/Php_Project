@@ -12,7 +12,7 @@ class NewsGateway
     /**
      * @return Connection
      */
-    public function getCon()
+    public function getCon(): Connection
     {
         return $this->con;
     }
@@ -43,24 +43,14 @@ class NewsGateway
 
 
 
-    public function recherche(string $titre)
+    public function recherche(string $categ)
     {
-
-        $query = "Select * FROM news Where(titre=:titre)";
+        $query = "Select * FROM news Where(categorie=:categ)";
         $this->getCon()->executeQuery($query, array(
-            ':titre' => array($titre, PDO::PARAM_STR)
+            ':categ' => array($categ, PDO::PARAM_STR)
         ));
         $results =$this->getCon()->getResults();
-        foreach ($results as $row) {
-            print "<br>";
-            print $row['titre'];
-            print "<br>";
-            print $row['lien'];
-            print "<br>";
-            print "<br>";
-            print "Fin Resultats";
-
-        }
+        return $results;
 
     }
 
