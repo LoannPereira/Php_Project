@@ -1,7 +1,7 @@
 <?php
-require_once('../dal/AdminGateway.php');
+require_once('dal/AdminGateway.php');
 require_once('metier/Admin.php');
-require_once('../config/Filtrage.php');
+require_once('config/Filtrage.php');
 
 /**
  * Created by PhpStorm.

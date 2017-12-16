@@ -1,5 +1,5 @@
 <?php
-require_once('../model/MdlAdmin.php');
+require_once('model/MdlAdmin.php');
 /**
  * Created by PhpStorm.
  * User: clguilbert
@@ -12,9 +12,16 @@ class CtrlAdmin
 
     private $model;
 
-    public function __construct($action)
+    public function __construct()
     {
+
         $model=new MdlAdmin();
+
+        try {
+
+            $action=$_GET['action'];
+            $action = Filtrage::cleanString($action);
+
         switch($action) {
             case NULL:
                 $this->$model->voirNews();
@@ -38,7 +45,15 @@ class CtrlAdmin
                 $this->$model->delSites();
                 break;
             default:
-                //ERREUR
+                //ERREUR action imprévue
+                break;
+        }
+        }
+        catch (PDOException $e){
+            //ERREUR BDD
+        }
+        catch (Exception $e2){
+            //ERREUR 404
         }
     }
 

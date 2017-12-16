@@ -1,5 +1,7 @@
 <?php
-require("../config/routes.php");
+require("config/routes.php");
+
+
 /**
  * Created by PhpStorm.
  * User: clguilbert
@@ -9,25 +11,33 @@ require("../config/routes.php");
 class FrontController //NE PASSE PAS DE PARAMETRES
 {
     private $routes;
-
+    private $ctrlUser;
+    private $ctrlAdmin;
     public function __construct()
     {
-        session_start();
+        //session_start();
         $listeRoutes = new routes();
         $this->routes = $listeRoutes->getRoutes();
+
 
         try {
             if (isset($_REQUEST['action'])) {
                 $action = Filtrage::cleanString($_REQUEST['action']);
+                if (isset($this->routes[$action])) {
+                    if(isset($this->routes[$action]["authenticated"])){
+                     //verif auth sino err 403
+                    }
+                    require_once($this->routes[$action]["ctrl"]);
+                    $ctrl=new substr(explode("/",$this->routes[$action]["ctrl"])[1],0,-4);
+                    $ctrl->{$this->routes[$action]["action"]}();
+                }
             } else {
-                //acceuil
+                require_once("controller/CtrlUser.php");
+                $ctrl=new CtrlUser();
+                $ctrl->voirNews();
             }
 
-            if (isset($this->routes[$_GET[$action]])) {
-                $this->routes[$_GET[$action]][$action[1]]();        //PEUT ETRE OU PEUT ETRE PAS
-                //COmment verifier les actions et les classes?
 
-            }
         } catch (Exception $e) {
             //ERREUR 404
         }

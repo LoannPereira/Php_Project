@@ -1,6 +1,6 @@
 <?php
 require_once('Connection.php');
-require_once('../model/metier/News.php');
+require_once('model/metier/News.php');
 /**
  * Created by PhpStorm.
  * User: clguilbert
@@ -68,7 +68,7 @@ class NewsGateway
     {
         $query = "SELECT * FROM news;";
         $st = $this->getCon()->executeQuery($query,array());
-        $results = $st->fetchall();
+        $results = $this->getCon()->getResults();
         return $results;
     }
 

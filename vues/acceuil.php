@@ -5,7 +5,7 @@
  * Date: 08/12/17
  * Time: 19:38
  */
-require_once ("../dal/AdminGateway.php");
+
 $return = FALSE;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -34,8 +34,8 @@ function test_input($data)
 <html>
 <head>
    <title>Top10News</title>
-   <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/acceuilAdminCss.css" rel="stylesheet">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/acceuilAdminCss.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -72,12 +72,10 @@ function test_input($data)
             if(isset($tabnews)) {
                 foreach ($tabnews as $row) {
                     print "<br>";
-                    print $row['titre'];
+                    echo '<h3>';echo $row->titre;echo '</h3>';
                     print "<br>";
-                    print $row['lien'];
+                    echo '<a href=';echo $row->lien;echo '>';echo $row->lien;echo '</a>';
                     print "<br>";
-                    print "<br>";
-                    print "Fin Resultats";
                 }
             }else{
                 var_dump($tabnews);
@@ -128,18 +126,3 @@ function test_input($data)
 </body>
 </html>';
 
-
-/*foreach($tabnews as $new){
-print $new->titre;
-print "<br />";
-print $new->date;
-print "<br />";
-print $new->lien;
-print $new->description;
-print "<br />";
-print $new->categorie;
-print "<br />";
-print "<br />";
-}
-
-*/

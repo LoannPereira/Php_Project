@@ -13,12 +13,12 @@ class routes
     public function __construct()
     {
         $routes = [
-            'acceuil' => ['ctrl' => 'CtrlUser.php', 'action' => 'voirNews'],
-            'connexion' => ['ctrl' => 'CtrlUser.php', 'action' => 'connexion'],
-            'voirSites' => ['ctrl' => 'CtrlAdmin.php', 'action' => 'voirSites','authenticated'=>true],
-            'addSites' => ['ctrl' => 'CtrlAdmin.php', 'action' => 'addSites','authenticated'=>true],
-            'delSites' => ['ctrl' => 'CtrlAdmin.php', 'action' => 'delSites','authenticated'=>true],
-            'deconnexion' => ['ctrl' => 'CtrlAdmin.php', 'action' => 'deconnexion','authenticated'=>true]
+            'acceuil' => ['ctrl' => 'controller/CtrlUser.php', 'action' => 'voirNews'],
+            'connexion' => ['ctrl' => 'controller/CtrlUser.php', 'action' => 'connexion'],
+            'voirSites' => ['ctrl' => 'controller/CtrlAdmin.php', 'action' => 'voirSites','authenticated'=>true],
+            'addSites' => ['ctrl' => 'controller/CtrlAdmin.php', 'action' => 'addSites','authenticated'=>true],
+            'delSites' => ['ctrl' => 'controller/CtrlAdmin.php', 'action' => 'delSites','authenticated'=>true],
+            'deconnexion' => ['ctrl' => 'controller/CtrlAdmin.php', 'action' => 'deconnexion','authenticated'=>true]
         ];
     }
 
