@@ -14,6 +14,7 @@ class CtrlUser
 {
 
     private $model;
+    private $categ;
     public function __construct()
     {
         $this->model=new Model();
@@ -42,6 +43,18 @@ class CtrlUser
         //ERREUR
     }
 
-}
+    }
+    public function getNewsCateg(string $categ){
+            if($categ=='all'){
+                $this->voirNews();
+            }
+            else{
+                $tabnews=$this->model->getNewsCateg($categ);
+                $link='vues/acceuil.php?categ='.$categ;
+                echo $link;
+                require_once('vues/acceuil.php');
+            }
+    }
+
 }
 
