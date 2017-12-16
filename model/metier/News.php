@@ -30,7 +30,8 @@ class News
 
     function __construct(string $titre, string $date, string $description , string $lien, string $categorie){
         $this->titre=$titre;
-        $this->date=new DateTime($date);
+        $date=new DateTime($date);
+        $this->date=$date->format('H:i:s d/m/Y');
         $this->description=$description;
         $this->lien=$lien;
         $this->categorie=$categorie;

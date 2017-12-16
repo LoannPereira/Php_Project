@@ -18,19 +18,23 @@ class FrontController //NE PASSE PAS DE PARAMETRES
         //session_start();
         $listeRoutes = new routes();
         $this->routes = $listeRoutes->getRoutes();
-
-
         try {
             if (isset($_REQUEST['action'])) {
                 $action = Filtrage::cleanString($_REQUEST['action']);
                 if (isset($this->routes[$action])) {
                     if(isset($this->routes[$action]["authenticated"])){
-                     //verif auth sino err 403
+                        if($this->routes[$action]["authenticated"]==true){ //verif auth
+
+                        }
+                        else{ // sinon erreur 403
+                            require_once ("vues/erreur403.html");
+                        }
                     }
                     require_once($this->routes[$action]["ctrl"]);
                     $ctrl=new substr(explode("/",$this->routes[$action]["ctrl"])[1],0,-4);
                     $ctrl->{$this->routes[$action]["action"]}();
                 }
+
             } else {
                 require_once("controller/CtrlUser.php");
                 $ctrl=new CtrlUser();
@@ -39,7 +43,7 @@ class FrontController //NE PASSE PAS DE PARAMETRES
 
 
         } catch (Exception $e) {
-            //ERREUR 404
+            require_once ("vues/erreur404.html");
         }
     }
 

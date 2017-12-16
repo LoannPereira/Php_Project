@@ -20,13 +20,13 @@ class NewsGateway
 
     public function __construct()
     {
-        $this->con=new Connection('mysql:host=hina;dbname=dbclguilbert', 'clguilbert', 'clguilbert');
+        $this->con=new Connection('mysql:host=localhost;dbname=dblopereira2', 'root', '1234');
     }
 
     public function insert(string $titre, DateTime $date, string $description, string $lien, string $categorie){
-        $query="INSERT into news VALUES (:datep,:titre,:description,:lien,:categorie)";
+        $query="INSERT into news VALUES (:date,:titre,:description,:lien,:categorie)";
         $this->getCon()->executeQuery($query, array(
-            ':datep'=>array($date->format("Y-m-d H:i:s"),PDO::PARAM_STR),
+            ':date'=>array($date->format("Y-m-d H:i:s"),PDO::PARAM_STR),
             ':titre'=>array($titre,PDO::PARAM_STR),
             ':description'=>array($description,PDO::PARAM_STR),
             ':lien'=>array($lien, PDO::PARAM_STR),
@@ -66,7 +66,7 @@ class NewsGateway
 
     public function voirNews()
     {
-        $query = "SELECT * FROM news;";
+        $query = "SELECT * FROM news Order by date DESC ;";
         $st = $this->getCon()->executeQuery($query,array());
         $results = $this->getCon()->getResults();
         return $results;

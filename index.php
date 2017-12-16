@@ -7,5 +7,4 @@ require_once("controller/FrontController.php");
  * Time: 10:25
  */
 
-
 $control=new FrontController();

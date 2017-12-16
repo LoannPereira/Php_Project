@@ -33,7 +33,7 @@ class CtrlUser
     try {
         $admin = $this->model->connexion($login, $mdp); //RECOIT NEW ADMIN
     } catch (Exception $e) {
-        //Acces refusé
+        require_once ("vues/erreur403.html");// accès refusé
     }
     if ($admin != null) {
         echo "ok";

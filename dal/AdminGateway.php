@@ -21,7 +21,7 @@ class AdminGateway
     private $con;
     public function __construct()
     {
-        $this->con=new Connection('mysql:host=hostname;dbname=dblopereira2', 'root', '1234');
+        $this->con=new Connection('mysql:host=localhost;dbname=dblopereira2', 'root', '1234');
     }
 
 

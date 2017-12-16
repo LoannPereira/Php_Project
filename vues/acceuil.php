@@ -36,6 +36,7 @@ function test_input($data)
    <title>Top10News</title>
    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/acceuilAdminCss.css" rel="stylesheet">
+    <link href="css/acceuilCss.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -71,11 +72,12 @@ function test_input($data)
             <?php
             if(isset($tabnews)) {
                 foreach ($tabnews as $row) {
-                    print "<br>";
-                    echo '<h3>';echo $row->titre;echo '</h3>';
-                    print "<br>";
-                    echo '<a href=';echo $row->lien;echo '>';echo $row->lien;echo '</a>';
-                    print "<br>";
+                    echo '<br><div class="news">';
+                    echo '<a href=';echo $row->lien;echo ' class="titreArticle">';echo $row->titre;echo '</a>';
+                    echo '<p class="time">'; echo $row->date; echo '</p>';
+                    echo '<p class="description">'; echo $row->description; echo '</p>';
+                    echo '<p>Lien du site de référencement: '; echo $row->lien; echo '</p>';
+                    echo '</div>';
                 }
             }else{
                 var_dump($tabnews);
@@ -124,5 +126,5 @@ function test_input($data)
 
 </footer>
 </body>
-</html>';
+</html>
 

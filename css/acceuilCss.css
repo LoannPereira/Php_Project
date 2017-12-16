@@ -6,6 +6,27 @@ h2{
 #titre{
     text-align: center;
 }
+.titreArticle{
+    color: darkgrey;
+    text-shadow: 2px 1px 2px black;
+    font-size: 25px;
+}
+
+.news{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.news:hover{
+    background-color: whitesmoke;
+}
+.time{
+    position: relative;
+    text-align: right;
+}
+.description{
+
+}
 form{
     position: relative;
     width: 20%;
@@ -52,10 +73,12 @@ position: relative;
 }
 
 .page{
+
    position:relative;
 }
 #page{
+
     position: absolute;
-    right: 40%;
-    left: 40%;
+
+
 }
