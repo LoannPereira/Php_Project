@@ -5,7 +5,6 @@
  * Date: 08/12/17
  * Time: 19:38
  */
-
 $return = FALSE;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -58,19 +57,32 @@ function test_input($data)
         <div id="categ" >
                 <h2>Catégories</h2>
                 <div class="list-group" id="licateg">
-                    <a href="#" class="list-group-item">Sport</a>
-                    <a href="#" class="list-group-item">Tech</a>
-                    <a href="#" class="list-group-item">Politique</a>
-                    <a href="#" class="list-group-item">Musique</a>
-                    <a href="#" class="list-group-item">Jeux-Vidéos</a>
+                    <a href="index.php?action=categ&macateg=all" class="list-group-item">Tout</a>
+                    <a href="index.php?action=categ&macateg=Sport" class="list-group-item" >Sport</a>
+                    <a href="index.php?action=categ&macateg=Tech" class="list-group-item">Tech</a>
+                    <a href="index.php?action=categ&macateg=Politique" class="list-group-item">Politique</a>
+                    <a href="index.php?action=categ&macateg=Musique" class="list-group-item">Musique</a>
+                    <a href="index.php?action=categ&macateg=Jeux-Vidéos" class="list-group-item">Jeux-Vidéos</a>
+
                 </div>
         </div>
         <div id="listenews">
             <div>
-                <h2>Les News</h2>
+
+                <?php
+                if (isset($_GET["categ"])) {
+                    $categ=$_GET["categ"];
+                    echo '<h2>Les News de '; echo $categ; echo'</h2>';
+                }
+                else{
+                    echo'<h2>Les News</h2>';
+                }
+                ?>
             </div>
             <?php
-            if(isset($tabnews)) {
+
+
+             if(isset($tabnews)) {
                 foreach ($tabnews as $row) {
                     echo '<br><div class="news">';
                     echo '<a href=';echo $row->lien;echo ' class="titreArticle">';echo $row->titre;echo '</a>';
@@ -80,6 +92,7 @@ function test_input($data)
                     echo '</div>';
                 }
             }else{
+                var_dump($tabnews);
                 echo "<h2>Erreur d'appel dans la page</h2>";
             }
             ?>
