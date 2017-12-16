@@ -12,7 +12,7 @@ class NewsGateway
     /**
      * @return Connection
      */
-    public function getCon(): Connection
+    public function getCon()
     {
         return $this->con;
     }

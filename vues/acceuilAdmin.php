@@ -1,11 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: lopereira2
- * Date: 08/12/17
- * Time: 19:38
- */
-echo '
+
+
 <html>
 <head>
    <title>Top10News</title>
@@ -105,18 +99,4 @@ echo '
 
 </footer>
 </body>
-</html>';
-/*foreach($tabnews as $new){
-print $new->titre;
-print "<br />";
-print $new->date;
-print "<br />";
-print $new->lien;
-print $new->description;
-print "<br />";
-print $new->categorie;
-print "<br />";
-print "<br />";
-}
-
-*/
+</html>

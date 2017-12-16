@@ -7,4 +7,10 @@ require_once("controller/FrontController.php");
  * Time: 10:25
  */
 
+require_once('config/config.php');
+
+require_once('config/Autoloader.php'); Autoloader::charger();
+
+session_start();
+
 $control=new FrontController();

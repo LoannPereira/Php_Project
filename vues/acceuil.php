@@ -80,7 +80,6 @@ function test_input($data)
                     echo '</div>';
                 }
             }else{
-                var_dump($tabnews);
                 echo "<h2>Erreur d'appel dans la page</h2>";
             }
             ?>
