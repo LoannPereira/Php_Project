@@ -6,6 +6,7 @@
  * Time: 21:22
  */
 
+
 $vues['acceuil']='vues/acceuil.php';
 $vues['acceuilAdmin']='vues/acceuilAdmin.php';
 

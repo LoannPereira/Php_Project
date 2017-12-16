@@ -27,6 +27,14 @@ class Autoloader
         }
     }
 
+    public static function stop(){
+        if(null !== self::$_instance) {
+            if(!spl_autoload_unregister(array(self::$_instance, '_autoload')))
+                throw new RuntimeException('Could not stop the autoload');
+            self::$_instance = null;
+        }
+    }
+
     private static function _autoload($class)
     {
         global $rep;
