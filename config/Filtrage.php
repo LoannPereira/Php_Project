@@ -16,5 +16,15 @@ class Filtrage
         return filter_var($mail, FILTER_SANITIZE_EMAIL);
     }
 
+    //Usage pour les mots de passe?
+    public static function isAlphanumeric($input){
+        $regex = '/^[a-z_\-0-9 ,]*$/i';
+        if(filter_var($input, FILTER_VALIDATE_REGEXP, array(
+            "options" => array("regexp"=>$regex)
+        )))
+            return true;
+        return false;
+    }
+
 
 }
