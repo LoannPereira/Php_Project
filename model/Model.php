@@ -32,6 +32,17 @@ class Model
         return $tabnews;
     }
 
+    public function getNewsCateg(string $categ){
+        $results=$this->getGateway()->recherche($categ);
+        $tabnews=[];
+        foreach ($results as $row) {
+            $tabnews[]=new News($row['titre'],$row['date'],$row['description'],$row['lien'],$row['categorie']);
+        }
+        return $tabnews;
+    }
+
+
+
     public function connection($login, $mdp){ //RECOIT DEUX STRINGS LOGIN ET MDP DEPUIS LA VUE acceuil
 
         $authorize=$this->gateway->authentificate("admin","123");//Variables par défaut, a modifier
