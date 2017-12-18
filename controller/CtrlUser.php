@@ -59,7 +59,7 @@ class CtrlUser
                 $tabnews=$this->model->getNewsCateg($categ);
                 $link='vues/acceuil.php?categ='.$categ;
                 echo $link;
-                require_once('vues/acceuil.php');
+                require_once('/vues/acceuil.php');
             }
     }
 

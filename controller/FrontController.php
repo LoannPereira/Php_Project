@@ -10,8 +10,7 @@ require("config/routes.php");
 class FrontController //NE PASSE PAS DE PARAMETRES
 {
     private $routes;
-    private $ctrlUser;
-    private $ctrlAdmin;
+
     public function __construct()
     {
         $listeroutes = new routes();
@@ -28,7 +27,7 @@ class FrontController //NE PASSE PAS DE PARAMETRES
                     if (isset($this->routes[$action]["authenticated"])) {
                         if ($this->routes[$action]["authenticated"] == true) { //verif auth
                         } else { // sinon erreur 403
-                            require_once("vues/erreur403.html");
+                            require_once("/vues/erreur403.html");
                         }
                     }
                         if (isset($_REQUEST['macateg'])) {
@@ -55,14 +54,14 @@ class FrontController //NE PASSE PAS DE PARAMETRES
                 }
 
             } else {
-                require_once("controller/CtrlUser.php");
+                require_once("CtrlUser.php");
                 $ctrl = new CtrlUser();
                 $ctrl->voirNews();
              }
 
 
         } catch (Exception $e) {
-            require_once ("vues/erreur404.html");
+            require_once ("/vues/erreur404.html");
         }
     }
 

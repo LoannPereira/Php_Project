@@ -1,6 +1,6 @@
 <?php
 require_once('dal/NewsGateway.php');
-require_once('metier/News.php');
+require_once('model/metier/News.php');
 /**
  * Created by PhpStorm.
  * User: clguilbert

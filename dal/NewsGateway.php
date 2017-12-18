@@ -21,6 +21,7 @@ class NewsGateway
     public function __construct()
     {
         $this->con=new Connection('mysql:host=localhost;dbname=clguilbert', 'root', '');
+
     }
 
     public function insert(string $titre, DateTime $date, string $description, string $lien, string $categorie){
@@ -68,6 +69,9 @@ class NewsGateway
         return $results;
     }
 
+    public function getNbNews(){
+        
+    }
 
 }
 ?>

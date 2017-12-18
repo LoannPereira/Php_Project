@@ -36,6 +36,7 @@
         <div id="listenews">
             <div>
 
+
                 <?php
                 if (isset($_GET["categ"])) {
                     $categ=$_GET["categ"];
