@@ -4,7 +4,7 @@
     <list default="true" id="42fc5e4c-0213-4e50-87dc-e24288ebf85d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/controller/CtrlUser.php" afterPath="$PROJECT_DIR$/controller/CtrlUser.php" />
-      <change beforePath="$PROJECT_DIR$/controller/FrontController.php" afterPath="$PROJECT_DIR$/controller/FrontController.php" />
+      <change beforePath="$PROJECT_DIR$/dal/Connection.php" afterPath="$PROJECT_DIR$/dal/Connection.php" />
       <change beforePath="$PROJECT_DIR$/dal/NewsGateway.php" afterPath="$PROJECT_DIR$/dal/NewsGateway.php" />
       <change beforePath="$PROJECT_DIR$/model/Model.php" afterPath="$PROJECT_DIR$/model/Model.php" />
       <change beforePath="$PROJECT_DIR$/vues/acceuil.php" afterPath="$PROJECT_DIR$/vues/acceuil.php" />
@@ -21,9 +21,13 @@
       <file leaf-file-name="acceuil.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/acceuil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="399">
+              <caret line="94" column="31" lean-forward="false" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+              <folding>
+                <element signature="e#3747#3754#1#HTML" expanded="true" />
+                <element signature="e#4264#4271#1#HTML" expanded="true" />
+                <marker date="1513637484522" expanded="true" signature="4168:4195" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -41,8 +45,8 @@
       <file leaf-file-name="CtrlUser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/CtrlUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state relative-caret-position="336">
+              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -51,14 +55,25 @@
       <file leaf-file-name="NewsGateway.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dal/NewsGateway.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="72" column="8" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+            <state relative-caret-position="322">
+              <caret line="59" column="24" lean-forward="false" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
               <folding>
-                <marker date="1513633917166" expanded="true" signature="577:645" ph="INSERT into news... " />
-                <marker date="1513633917166" expanded="true" signature="1079:1115" ph="DELETE FROM news... " />
-                <marker date="1513633917166" expanded="true" signature="1312:1354" ph="Select * FRO... news" />
-                <marker date="1513633917166" expanded="true" signature="1692:1750" ph="SELECT * FRO... news" />
+                <marker date="1513637497670" expanded="true" signature="577:645" ph="INSERT into news... " />
+                <marker date="1513637497670" expanded="true" signature="1079:1115" ph="DELETE FROM news... " />
+                <marker date="1513637497670" expanded="true" signature="1312:1354" ph="Select * FRO... news" />
+                <marker date="1513637497670" expanded="true" signature="1692:1750" ph="SELECT * FRO... news" />
+                <marker date="1513637497670" expanded="true" signature="2064:2089" ph="SELECT COUNT... news" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connection.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dal/Connection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,7 +81,7 @@
       <file leaf-file-name="FrontController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/FrontController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="448">
               <caret line="56" column="30" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
               <folding />
             </state>
@@ -76,8 +91,8 @@
       <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="427">
+              <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -117,10 +132,11 @@
         <option value="$PROJECT_DIR$/dal/AdminGateway.php" />
         <option value="$PROJECT_DIR$/config/Autoloader.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
-        <option value="$PROJECT_DIR$/vues/acceuil.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/controller/FrontController.php" />
+        <option value="$PROJECT_DIR$/dal/Connection.php" />
         <option value="$PROJECT_DIR$/model/Model.php" />
+        <option value="$PROJECT_DIR$/vues/acceuil.php" />
         <option value="$PROJECT_DIR$/controller/CtrlUser.php" />
         <option value="$PROJECT_DIR$/dal/NewsGateway.php" />
       </list>
@@ -157,7 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,6 +221,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,22 +267,21 @@
       <workItem from="1513541947686" duration="2596000" />
       <workItem from="1513608764887" duration="1291000" />
       <workItem from="1513629454494" duration="4408000" />
+      <workItem from="1513636102874" duration="1475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25798000" />
+    <option name="totallyTimeSpent" value="27273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -278,6 +293,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -292,14 +308,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../ToutDouxListe-master/controller/Validation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Validation.php" />
     <entry file="file://$PROJECT_DIR$/../NewsFeed-master/DAL/Validation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
@@ -319,13 +327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="22" column="5" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dal/Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -370,11 +371,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <marker date="1513544492990" expanded="true" signature="525:566" ph="Select * FRO... admin" />
-            <marker date="1513544492990" expanded="true" signature="962:1025" ph="SELECT mdp F... admin" />
-            <marker date="1513544492990" expanded="true" signature="1610:1628" ph="SELECT * FRO... news" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -528,10 +525,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1415018492000" expanded="true" signature="1527:1536" ph="..." />
-            <marker date="1415018492000" expanded="true" signature="2016:2025" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -547,7 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-413">
           <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -563,17 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../NewsFeed-master/DAL/NewsGateway.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <marker date="1513494232000" expanded="true" signature="231:291" ph="SELECT * FRO... news" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -581,7 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="76" column="40" lean-forward="false" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -597,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,14 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
           <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
-          <folding>
-            <marker date="1513494232000" expanded="true" signature="957:1088" ph="..." />
-            <marker date="1513494232000" expanded="true" signature="1055:1088" ph="..." />
-            <marker date="1513494232000" expanded="true" signature="1710:2088" ph="..." />
-            <marker date="1513494232000" expanded="false" signature="1827:1836" ph="..." />
-            <marker date="1513494232000" expanded="true" signature="1837:2067" ph="..." />
-            <marker date="1513494232000" expanded="false" signature="2018:2042" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -620,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="69" column="104" lean-forward="false" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -628,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,16 +604,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../NewsFeed-master/views/ViewFlux.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
-            <marker date="1499759108000" expanded="true" signature="389:416" ph="SELECT * FRO... tablepaginate" />
+            <marker date="1513494232000" expanded="true" signature="1289:2035" ph="..." />
+            <marker date="1513494232000" expanded="true" signature="1424:2009" ph="..." />
+            <marker date="1513494232000" expanded="false" signature="1762:1793" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/acceuil.php">
+    <entry file="file://$PROJECT_DIR$/../NewsFeed-master/parser/Parser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        <state relative-caret-position="-1631">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="56" column="30" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -653,44 +646,65 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/FrontController.php">
+    <entry file="file://$PROJECT_DIR$/../NewsFeed-master/DAL/NewsGateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="56" column="30" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+        <state relative-caret-position="210">
+          <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="43" />
+          <folding>
+            <marker date="1513494232000" expanded="true" signature="231:291" ph="SELECT * FRO... news" />
+            <marker date="1513494232000" expanded="true" signature="851:966" ph="SELECT * FRO... news" />
+            <marker date="1513494232000" expanded="true" signature="1487:1512" ph="SELECT COUNT... news" />
+            <marker date="1513494232000" expanded="true" signature="1829:1909" ph="SELECT COUNT... news" />
+            <marker date="1513494232000" expanded="true" signature="2328:2404" ph="INSERT INTO news... " />
+            <marker date="1513494232000" expanded="true" signature="3124:3245" ph="UPDATE news... " />
+            <marker date="1513494232000" expanded="true" signature="3902:3935" ph="DELETE FROM news... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Model.php">
+    <entry file="file://$PROJECT_DIR$/vues/acceuil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="399">
+          <caret line="94" column="31" lean-forward="false" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+          <folding>
+            <element signature="e#3747#3754#1#HTML" expanded="true" />
+            <element signature="e#4264#4271#1#HTML" expanded="true" />
+            <marker date="1513637484522" expanded="true" signature="4168:4195" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/CtrlUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state relative-caret-position="336">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dal/NewsGateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="72" column="8" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+        <state relative-caret-position="322">
+          <caret line="59" column="24" lean-forward="false" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
           <folding>
-            <marker date="1513633917166" expanded="true" signature="577:645" ph="INSERT into news... " />
-            <marker date="1513633917166" expanded="true" signature="1079:1115" ph="DELETE FROM news... " />
-            <marker date="1513633917166" expanded="true" signature="1312:1354" ph="Select * FRO... news" />
-            <marker date="1513633917166" expanded="true" signature="1692:1750" ph="SELECT * FRO... news" />
+            <marker date="1513637497670" expanded="true" signature="577:645" ph="INSERT into news... " />
+            <marker date="1513637497670" expanded="true" signature="1079:1115" ph="DELETE FROM news... " />
+            <marker date="1513637497670" expanded="true" signature="1312:1354" ph="Select * FRO... news" />
+            <marker date="1513637497670" expanded="true" signature="1692:1750" ph="SELECT * FRO... news" />
+            <marker date="1513637497670" expanded="true" signature="2064:2089" ph="SELECT COUNT... news" />
           </folding>
         </state>
       </provider>

@@ -32,6 +32,10 @@ class Model
         return $tabnews;
     }
 
+    public function cptNews(){
+        return $this->getGateway()->getNbNews();
+    }
+
     public function getNewsCateg(string $categ){
         $results=$this->getGateway()->recherche($categ);
         $tabnews=[];

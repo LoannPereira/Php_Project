@@ -25,6 +25,8 @@ class CtrlUser
     public function voirNews(){
         if (isset($_GET['page'])) $page = intval($_GET['page']); else $page=1;
         $tabnews=$this->model->voirNews($page);
+        $NbNews=$this->model->cptNews();
+        $NbNewsParPage=2;
         require_once('vues/acceuil.php');
 
     }

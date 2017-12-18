@@ -90,11 +90,13 @@
                     <span aria-hidden="true">&laquo;</span>
                   </a>
                 </li>
-                <li><a href="?page=1">1</a></li>
-                <li><a href="?page=2">2</a></li>
-                <li><a href="?page=3">3</a></li>
-                <li><a href="?page=4">4</a></li>
-                <li><a href="?page=5">5</a></li>
+                  <?php
+                  if(isset($page)&&isset($NbNews)&&isset($NbNewsParPage)) ;
+                  for($i=1;$i<=$NbNews/$NbNewsParPage+$NbNews%$NbNewsParPage;$i++){     #NB NEWS PAR PAGE DANS CTRL USER ET NEWS GATEWAY
+                      echo "<li><a href=?page=$i>$i</a></li>";
+                  }
+                  ?>
+
                 <li>
                   <a href="#" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
