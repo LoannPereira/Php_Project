@@ -44,7 +44,8 @@ class FrontController //NE PASSE PAS DE PARAMETRES
                         }
                         else {
                             require_once($this->routes[$action]["ctrl"]);
-                            $ctrl = new substr(explode("/", $this->routes[$action]["ctrl"])[1], 0, -4);
+                            $ctrl =substr(explode("/", $this->routes[$action]["ctrl"])[1], 0, -4);
+                            $ctrl= new $ctrl();
                             $ctrl->{$this->routes[$action]["action"]}();
                         }
                 }

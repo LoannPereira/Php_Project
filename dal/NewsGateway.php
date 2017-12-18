@@ -12,7 +12,7 @@ class NewsGateway
     /**
      * @return Connection
      */
-    public function getCon(): Connection
+    public function getCon()
     {
         return $this->con;
     }
@@ -20,7 +20,7 @@ class NewsGateway
 
     public function __construct()
     {
-        $this->con=new Connection('mysql:host=localhost;dbname=dblopereira2', 'root', '1234');
+        $this->con=new Connection('mysql:host=localhost;dbname=clguilbert', 'root', '');
     }
 
     public function insert(string $titre, DateTime $date, string $description, string $lien, string $categorie){

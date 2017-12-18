@@ -41,7 +41,7 @@ function test_input($data)
 <header>
     <h1 id="titre">Top10News</h1>
     <h1><?php echo "$return";?></h1>
-    <form action="acceuil.php" method="post" id="connexion">
+    <form action="index.php?action=connection" method="post" id="connexion">
         <div class="form-group">
             <label >Pseudo</label>
             <input type="text" class="form-control" name="pseudo" aria-describedby="emailHelp" placeholder="pseudo">
@@ -50,7 +50,7 @@ function test_input($data)
             <label for="exampleInputPassword1">Mot de passe</label>
             <input type="password" class="form-control" name="mdp" placeholder="Mot de passe">
         </div>
-        <button type="submit" class="btn btn-primary">Connexion</button>
+        <button type="submit"  class="btn btn-primary">Connexion</button>
     </form>
 </header>
 <div id="conteneur">

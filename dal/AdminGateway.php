@@ -5,7 +5,7 @@
  * Date: 10/12/2017
  * Time: 15:19
  */
-require_once('../model/metier/Admin.php');
+require_once('/model/metier/Admin.php');
 class AdminGateway
 {
 
@@ -40,7 +40,7 @@ class AdminGateway
             }
             else{
                 $pseudo=$row['pseudo'];
-                $query = "SELECT mdp FROM admin WHERE pseudo LIKE $pseudo ORDER BY pseudo DESC";
+                $query = "SELECT mdp FROM admin WHERE pseudo LIKE $pseudo ORDER BY pseudo";
                 $this->getConnect()->executeQuery($query, array(
                 ':mdp' => array($mdp, PDO::PARAM_STR)
             ));
@@ -49,7 +49,7 @@ class AdminGateway
                     if ($rowi['mdp'] == NULL) {
                         return False;
                     } else {
-                        return TRUE;
+                        if($rowi['mdp']==password_verify($rowi['mdp'],$mdp))return TRUE;
                     }
                 }
             }

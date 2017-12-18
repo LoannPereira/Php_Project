@@ -29,18 +29,18 @@ class CtrlUser
     }
 
     public function connection(){
-    $login = Validation::nettoyer_string($_POST['login']);
-    $mdp = Validation::nettoyer_string($_POST['mdp']);
+    $login = Filtrage::cleanString($_POST['login']);
+    $mdp = Filtrage::cleanString($_POST['mdp']);
     try {
-        $admin = $this->model->connexion($login, $mdp); //RECOIT NEW ADMIN
+        $admin = $this->model->connection($login, $mdp); //RECOIT NEW ADMIN
     } catch (Exception $e) {
-        require_once ("vues/erreur403.html");// accès refusé
+        require_once ("/vues/erreur403.html");// accès refusé
     }
     if ($admin != null) {
-        echo "ok";
-    } //AFFICHE PAGE ADMIN
+        require_once ("/vues/acceuilAdmin.php");
+    }
     else {
-        //ERREUR
+        require_once ("/vues/erreur403.html");
     }
 
     }

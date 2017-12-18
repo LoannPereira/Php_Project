@@ -15,7 +15,7 @@ class routes
 
         $this->routes = [
             'acceuil' => ['ctrl' => 'controller/CtrlUser.php', 'action' => 'voirNews'],
-            'connexion' => ['ctrl' => 'controller/CtrlUser.php', 'action' => 'connexion'],
+            'connection' => ['ctrl' => 'controller/CtrlUser.php', 'action' => 'connection'],
             'voirSites' => ['ctrl' => 'controller/CtrlAdmin.php', 'action' => 'voirSites','authenticated'=>true],
             'addSites' => ['ctrl' => 'controller/CtrlAdmin.php', 'action' => 'addSites','authenticated'=>true],
             'delSites' => ['ctrl' => 'controller/CtrlAdmin.php', 'action' => 'delSites','authenticated'=>true],

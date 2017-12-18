@@ -43,10 +43,9 @@ class Model
 
 
 
-    public function connection($login, $mdp){ //RECOIT DEUX STRINGS LOGIN ET MDP DEPUIS LA VUE acceuil
-
-        $authorize=$this->gateway->authentificate("admin","123");//Variables par défaut, a modifier
-        //hash et verify DANS CONTROLLER
+    public function connection($login, $mdp){
+        $gate=new AdminGateway();
+        $authorize=$gate->connexionAdmin($login,hash("sha1", $mdp));//Variables par défaut, a modifier
         if($authorize==1) return null;
         $_SESSION['login']=$login;
 
