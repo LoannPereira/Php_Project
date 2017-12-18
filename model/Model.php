@@ -23,8 +23,8 @@ class Model
         return $this->gateway;
     }
 
-    public function voirNews(){
-        $results=$this->getGateway()->voirNews();
+    public function voirNews($page){
+        $results=$this->getGateway()->voirNews($page);
         $tabnews=[];
         foreach ($results as $row) {
             $tabnews[]=new News($row['titre'],$row['date'],$row['description'],$row['lien'],$row['categorie']);

@@ -23,7 +23,8 @@ class CtrlUser
     }
 
     public function voirNews(){
-        $tabnews=$this->model->voirNews();
+        if (isset($_GET['page'])) $page = intval($_GET['page']); else $page=1;
+        $tabnews=$this->model->voirNews($page);
         require_once('vues/acceuil.php');
 
     }
