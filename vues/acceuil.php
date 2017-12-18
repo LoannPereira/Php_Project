@@ -1,35 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: lopereira2
- * Date: 08/12/17
- * Time: 19:38
- */
-$return = FALSE;
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if(isset($_POST["pseudo"]))
-        $pseudo = test_input($_POST["pseudo"]);
-    if(isset($_POST["mdp"]))
-        $mdp = test_input($_POST["mdp"]);
-    $gateway= new AdminGateway();
-    $return = $gateway->connexionAdmin($pseudo,$mdp);
-}
-
-
-
-function test_input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    $data = htmlentities($data);
-    return $data;
-}
-
-
-
-?>
 <html>
 <head>
    <title>Top10News</title>
@@ -40,7 +8,6 @@ function test_input($data)
 <body>
 <header>
     <h1 id="titre">Top10News</h1>
-    <h1><?php echo "$return";?></h1>
     <form action="index.php?action=connection" method="post" id="connexion">
         <div class="form-group">
             <label >Pseudo</label>

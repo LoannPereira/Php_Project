@@ -1,11 +1,5 @@
 <?php
 require("config/routes.php");
-if(isset($_REQUEST['categ'])){
-    $categ = $_GET['categ'];
-    require_once("controller/CtrlUser.php");
-    $ctrl=new CtrlUser();
-    $ctrl->getNewsCateg($categ);
-}
 
 /**
  * Created by PhpStorm.
@@ -28,6 +22,8 @@ class FrontController //NE PASSE PAS DE PARAMETRES
             if (isset($_REQUEST['action'])) {
                 //$action = Filtrage::cleanString($_REQUEST['action']); provoque un bug
                 $action = $_REQUEST['action'];
+                echo 'action demandé : '.$action;
+                echo'<br/>';
                 if (isset($this->routes[$action])) {
                     if (isset($this->routes[$action]["authenticated"])) {
                         if ($this->routes[$action]["authenticated"] == true) { //verif auth
@@ -43,10 +39,18 @@ class FrontController //NE PASSE PAS DE PARAMETRES
 
                         }
                         else {
+                        echo'tentative d ouverture du ctrl : '.$this->routes[$action]["ctrl"];
+                        echo'<br/>';
                             require_once($this->routes[$action]["ctrl"]);
+                            echo 'ouverture du ctrl: ok';
+                            echo'<br/>';
                             $ctrl =substr(explode("/", $this->routes[$action]["ctrl"])[1], 0, -4);
-                            $ctrl= new $ctrl();
-                            $ctrl->{$this->routes[$action]["action"]}();
+                            echo 'nom de la classe du controller :'.$ctrl;
+                            echo'<br/>';
+                            $moninstance= new $ctrl();
+                            var_dump($moninstance);
+                            echo 'test';
+                            $moninstance->{$this->routes[$action]["action"]}();
                         }
                 }
 
