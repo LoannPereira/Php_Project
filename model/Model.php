@@ -50,10 +50,9 @@ class Model
     public function connection($login, $mdp){
         $gate=new AdminGateway();
         $authorize=$gate->connexionAdmin($login,hash("sha1", $mdp));//Variables par défaut, a modifier
-        if($authorize==1) return null;
-        $_SESSION['login']=$login;
+        if($authorize) return TRUE;
+        else return FALSE;
 
-        return new Admin($login,$mdp);
     }
 
     public function deconnexion()

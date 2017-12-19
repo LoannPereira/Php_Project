@@ -1,5 +1,6 @@
 <?php
 require_once('model/MdlAdmin.php');
+require_once('model/Model.php');
 /**
  * Created by PhpStorm.
  * User: clguilbert
@@ -10,50 +11,37 @@ require_once('model/MdlAdmin.php');
 class CtrlAdmin
 {
 
-    private $model;
-
+    private $modeladmin;
+    private $modeluser;
+    private $categ;
+    private $tabnews;
     public function __construct()
     {
 
-        $model=new MdlAdmin();
 
-        try {
+        $this->modeladmin= new MdlAdmin();
 
-            $action=$_GET['action'];
-            $action = Filtrage::cleanString($action);
+    }
+    public function voirNews(){
+        if (isset($_GET['ADpage'])) $page = intval($_GET['ADpage']);
+        else $page=1;
+        $tabnews=$this->modeladmin->voirNews($page);
+        $NbNews=$this->modeladmin->cptNews();
+        $NbNewsParPage=3;
+        var_dump($NbNews);
+        require_once('vues/acceuilAdmin.php');
 
-        switch($action) {
-            case NULL:
-                $this->$model->voirNews();
-                break;
+    }
 
 
-
-            case "deconnexion":
-                $this->$model->deconnexion();
-                break;
-            case "paramList":
-                $this->$model->paramList();
-                break;
-            case "voirSites":
-                $this->$model->voirSites();
-                break;
-            case "addSites":
-                $this->$model->addSites();
-                break;
-            case "delSites":
-                $this->$model->delSites();
-                break;
-            default:
-                //ERREUR action imprévue
-                break;
+    public function getNewsCateg(string $categ){
+        if($categ=='all'){
+            $this->voirNews();
         }
-        }
-        catch (PDOException $e){
-            //ERREUR BDD
-        }
-        catch (Exception $e2){
-            //ERREUR 404
+        else{
+            $tabnews=$this->modeladmin->getNewsCateg($categ);
+
+            require_once('vues/acceuilAdmin.php');
         }
     }
 

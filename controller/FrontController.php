@@ -21,8 +21,6 @@ class FrontController //NE PASSE PAS DE PARAMETRES
             if (isset($_REQUEST['action'])) {
                 //$action = Filtrage::cleanString($_REQUEST['action']); provoque un bug
                 $action = $_REQUEST['action'];
-                echo 'action demandé : '.$action;
-                echo'<br/>';
                 if (isset($this->routes[$action])) {
                     if (isset($this->routes[$action]["authenticated"])) {
                         if ($this->routes[$action]["authenticated"] == true) { //verif auth
@@ -33,27 +31,27 @@ class FrontController //NE PASSE PAS DE PARAMETRES
                         if (isset($_REQUEST['macateg'])) {
                             $macateg = $_REQUEST['macateg'];
                             require_once($this->routes[$action]["ctrl"]);
-                            $ctrl = new CtrlUser();
+                            $ctrl =substr(explode("/", $this->routes[$action]["ctrl"])[1], 0, -4);
+                            $ctrl = new $ctrl();
                             $ctrl->getNewsCateg($macateg);
 
                         }
                         else {
-                        echo'tentative d ouverture du ctrl : '.$this->routes[$action]["ctrl"];
-                        echo'<br/>';
                             require_once($this->routes[$action]["ctrl"]);
-                            echo 'ouverture du ctrl: ok';
-                            echo'<br/>';
+                            echo 'controller = '.$this->routes[$action]["ctrl"];
                             $ctrl =substr(explode("/", $this->routes[$action]["ctrl"])[1], 0, -4);
-                            echo 'nom de la classe du controller :'.$ctrl;
-                            echo'<br/>';
-                            $moninstance= new $ctrl();
-                            var_dump($moninstance);
-                            echo 'test';
-                            $moninstance->{$this->routes[$action]["action"]}();
+                            $ctrl= new $ctrl();
+                            $ctrl->{$this->routes[$action]["action"]}();
                         }
                 }
 
-            } else {
+            } else if(isset($_REQUEST['ADpage'])) {
+                require_once($this->routes['ADpage']["ctrl"]);
+                $ctrl =substr(explode("/", $this->routes['ADpage']["ctrl"])[1], 0, -4);
+                $ctrl= new $ctrl();
+                $ctrl->{$this->routes['ADpage']["action"]}();
+            }
+            else{
                 require_once("CtrlUser.php");
                 $ctrl = new CtrlUser();
                 $ctrl->voirNews();
@@ -61,7 +59,7 @@ class FrontController //NE PASSE PAS DE PARAMETRES
 
 
         } catch (Exception $e) {
-            require_once ("/vues/erreur404.html");
+            require_once ("vues/erreur404.html");
         }
     }
 

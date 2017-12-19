@@ -2,7 +2,6 @@
 <head>
    <title>Top10News</title>
    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/acceuilAdminCss.css" rel="stylesheet">
     <link href="css/acceuilCss.css" rel="stylesheet">
 </head>
 <body>
@@ -24,13 +23,12 @@
         <div id="categ" >
                 <h2>Catégories</h2>
                 <div class="list-group" id="licateg">
-                    <a href="index.php?action=categ&macateg=all" class="list-group-item">Tout</a>
+                    <a href="index.php?action=categ&macateg=all" class="list-group-item" id="tout">Tout</a>
                     <a href="index.php?action=categ&macateg=Sport" class="list-group-item" >Sport</a>
                     <a href="index.php?action=categ&macateg=Tech" class="list-group-item">Tech</a>
                     <a href="index.php?action=categ&macateg=Politique" class="list-group-item">Politique</a>
                     <a href="index.php?action=categ&macateg=Musique" class="list-group-item">Musique</a>
                     <a href="index.php?action=categ&macateg=Jeux-Vidéos" class="list-group-item">Jeux-Vidéos</a>
-
                 </div>
         </div>
         <div id="listenews">
@@ -81,32 +79,29 @@
                 </div>
         </div>
 </div>
-        
-        <nav id="page">
-              <ul class="pagination">
-
-                <li>
-                  <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                  <?php
-                  if(isset($page)&&isset($NbNews)&&isset($NbNewsParPage)) ;
-                  for($i=1;$i<=$NbNews/$NbNewsParPage+$NbNews%$NbNewsParPage;$i++){     #NB NEWS PAR PAGE DANS CTRL USER ET NEWS GATEWAY
-                      echo "<li><a href=?page=$i>$i</a></li>";
-                  }
-                  ?>
-
-                <li>
-                  <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
- 
 <footer class="page">
+    <nav>
+        <ul class="pagination">
 
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <?php
+            if(isset($page)&&isset($NbNews)&&isset($NbNewsParPage)) ;
+            for($i=1;$i<=$NbNews/$NbNewsParPage+$NbNews%$NbNewsParPage;$i++){     #NB NEWS PAR PAGE DANS CTRL USER ET NEWS GATEWAY
+                echo "<li><a href=?page=$i>$i</a></li>";
+            }
+            ?>
+
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </footer>
 </body>
 </html>

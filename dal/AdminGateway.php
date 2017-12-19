@@ -5,7 +5,7 @@
  * Date: 10/12/2017
  * Time: 15:19
  */
-require_once('/model/metier/Admin.php');
+require_once('model/metier/Admin.php');
 class AdminGateway
 {
 
@@ -14,11 +14,12 @@ class AdminGateway
     /**
      * @return Connection
      */
+    private $con;
     public function getConnect()
     {
         return $this->con;
     }
-    private $con;
+
     public function __construct()
     {
         $this->con=new Connection('mysql:host=localhost;dbname=dblopereira2', 'root', '1234');
@@ -29,35 +30,21 @@ class AdminGateway
     public  function connexionAdmin(string $pseudo,string $mdp)
     {
 
-        $query = "Select * FROM admin Where(pseudo=:pseudo)";
+        $query = "Select * FROM admin Where(pseudo = :login)";
         $this->getConnect()->executeQuery($query, array(
-            ':pseudo' => array($pseudo, PDO::PARAM_STR)
+            ':login' => array($pseudo, PDO::PARAM_STR)
         ));
         $resultspseudo =$this->getConnect()->getResults();
-        foreach ($resultspseudo as $row) {
-            if($row['pseudo']==NULL){
-                return False;
-            }
-            else{
-                $pseudo=$row['pseudo'];
-                $query = "SELECT mdp FROM admin WHERE pseudo LIKE $pseudo ORDER BY pseudo";
-                $this->getConnect()->executeQuery($query, array(
-                ':mdp' => array($mdp, PDO::PARAM_STR)
-            ));
-                $resultsmdp =$this->getConnect()->getResults();
-                foreach ($resultsmdp as $rowi) {
-                    if ($rowi['mdp'] == NULL) {
-                        return False;
-                    } else {
-                        if($rowi['mdp']==password_verify($rowi['mdp'],$mdp))return TRUE;
-                    }
-                }
-            }
-
-
+        if($resultspseudo[0]['pseudo']==null){
+            return FALSE;
         }
+        else if(hash("sha1", $resultspseudo[0]['mdp'])==$mdp){
+            return TRUE;
+        }
+        else{
 
-
+            return FALSE;
+        }
     }
 
     public function voirNews()

@@ -9,64 +9,74 @@ header{
     text-align: center;
 
 }
-#connexion{
-    position:relative;
-    width: 15%;
-    padding-left:2%;
+#deconnexion{
+    padding: 10px;
+    margin-left: 20px;
+    border-color: #b22222;
+    background-color: #b22222;
 }
-.textField{
-
+#deconnexion:hover{
+    background-color: darkred;
 }
 #conteneur{
-
-    display: flex;
-    justify-content: space-between;
-
+    display: flex ;
+    justify-content: space-around;
+}
+h2{
+    text-align: center;
 }
 #categ{
-    display: inline-block;
-    vertical-align: top;
-    width: 15%;
-    margin: 10px;
+    padding: 20px;
 }
-#licateg{
-    padding: 10px;
-    margin: 15px;
-    height: 30%;
+#tout{
+    color: #fff;
+    background-color:#337ab7;
 }
-
-
+#tout:hover{
+    background-color: #286090;
+    border-color: #204d74;
+}
+#tout:active{
+    background-color: #286090;
+    border-color: #122b40;
+}
 #listenews{
-    display: inline-block;
-    width: 60%;
-    height: 70%;
-    margin-top: -10%;
+    padding:20px;
+    min-width: 60%;
+    max-width: 60%;
+}
+.news{
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+.news:hover{
+    background-color: whitesmoke;
+}
+
+.titreArticle{
+    font-size: 25px;
+
 }
 #top{
-    margin-right: 2%;
-    display: inline-block;
-    width: 15%;
-
+    padding:20px;
+    max-width: 150px;
+    min-width: 150px;
 }
 .list-group-item{
-    margin: 5px;
     text-align: center;
 }
-#ajout{
-    display: inline-block;
+
+#conteneurbas{
+    display: flex;
+    justify-content: space-between;
 }
 #nbNews{
-    display: inline-flex;
-    position: absolute;
-    right:30px;
-    padding: 10px;
-
+    padding-right:1%;
 }
-
-#page{
-    position: absolute;
-    width: 60%;
-    left: 20%;
+#ajout{
+    padding-left: 1%;
+}
+.page{
     text-align: center;
-
 }

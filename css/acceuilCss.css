@@ -1,84 +1,61 @@
-h2{
-    text-align: center;
-
-}
-
 #titre{
     text-align: center;
 }
-.titreArticle{
-    color: darkgrey;
-    text-shadow: 2px 1px 2px black;
-    font-size: 25px;
+#connexion{
+   text-align: left;
+    width: 300px;
+    padding-left: 20px;
 }
 
+#conteneur{
+    display: flex ;
+    justify-content: space-around;
+}
+h2{
+    text-align: center;
+}
+#categ{
+    padding: 20px;
+}
+#tout{
+    color: #fff;
+    background-color:#337ab7;
+}
+#tout:hover{
+    background-color: #286090;
+    border-color: #204d74;
+}
+#tout:active{
+    background-color: #286090;
+    border-color: #122b40;
+}
+#listenews{
+    padding:20px;
+    min-width: 60%;
+    max-width: 60%;
+}
 .news{
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
 }
 .news:hover{
     background-color: whitesmoke;
 }
-.time{
-    position: relative;
-    text-align: right;
-}
-.description{
+
+.titreArticle{
+    font-size: 25px;
 
 }
-form{
-    position: relative;
-    width: 20%;
-    padding-left: 10px;
+#top{
+    padding:20px;
+    max-width: 150px;
+    min-width: 150px;
 }
-#submit{
-    position: absolute;
-    left: 35%;
-
-}
-.textField{
-position: relative;
-    right: 10%;
-}
-#conteneur{
-    padding-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: space-between;
-}
-.categ{
-    margin-left: 2%;
-    border-radius: 10px;
-}
-#licateg{
-    padding-top: 10px;
-    margin: 15px;
-    width: 150px;
-    height: 30%;
-}
-
 .list-group-item{
-    margin: 5px;
     text-align: center;
-}
-.listenews{
-    position: relative;
-    width: 60%;
-}
-.top{
-    margin-right: 2%;
-
 }
 
 .page{
-
-   position:relative;
-}
-#page{
-
-    position: absolute;
-
-
+    text-align: center;
 }
