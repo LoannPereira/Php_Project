@@ -12,7 +12,104 @@ class News
     private $date;
     private $description;
     private $lien;
+    private $guid;
+    private $categorie;
 
+    /**
+     * @return string
+     */
+    public function getCategorie(): string
+    {
+        return $this->categorie;
+    }
+
+    /**
+     * @param string $categorie
+     */
+    public function setCategorie(string $categorie)
+    {
+        $this->categorie = $categorie;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitre(): string
+    {
+        return $this->titre;
+    }
+
+    /**
+     * @param string $titre
+     */
+    public function setTitre(string $titre)
+    {
+        $this->titre = $titre;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDate(): string
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param string $date
+     */
+    public function setDate(string $date)
+    {
+        $this->date = $date;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription(string $description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLien(): string
+    {
+        return $this->lien;
+    }
+
+    /**
+     * @param string $lien
+     */
+    public function setLien(string $lien)
+    {
+        $this->lien = $lien;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGuid(): string
+    {
+        return $this->guid;
+    }
+
+    /**
+     * @param string $guid
+     */
+    public function setGuid(string $guid)
+    {
+        $this->guid = $guid;
+    }
 
     public function __get($var)
     {
@@ -35,6 +132,8 @@ class News
         $this->description=$description;
         $this->lien=$lien;
         $this->categorie=$categorie;
+
+
 
     }
 

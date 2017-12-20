@@ -1,10 +1,22 @@
 #titre{
     text-align: center;
 }
+
 #connexion{
    text-align: left;
     width: 300px;
     padding-left: 20px;
+}
+.recherche{
+     position: absolute;
+     width:250px;
+     text-align: center;
+     right: 15px;
+     top:150px;
+
+ }
+#btnrecherche:hover{
+    background-color: #b92c28;
 }
 
 #conteneur{

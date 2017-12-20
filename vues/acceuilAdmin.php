@@ -1,17 +1,32 @@
 <html>
 <head>
-    <title>Top10News</title>
+    <title>TopNews</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/acceuilAdminCss.css" rel="stylesheet">
 </head>
 <body>
 <header>
-    <h1 id="titre">Top10News</h1>
-    <form action="index.php?action=deconnexion" method="post">
+    <h1 id="titre">TopNews</h1>
+</header>
+<div id="conteneurhaut">
+    <div>
+    <form action="index.php?action=deconnexion&nbnpage=<?php echo $_REQUEST['nbnpage']?>" method="post">
         <button type="submit"  class="btn btn-primary" id="deconnexion">Déconnexion</button>
     </form>
+    </div>
 
-</header>
+<div class="recherche">
+    <nav>
+        <p>Rechercher une News</p>
+        <form action="index.php?action=ADrecherche" method="post">
+            <div class="form-group">
+                <input type="text" name="titreRecherche" class="form-control" placeholder="titre de news">
+            </div>
+            <button type="submit" class="btn btn-primary" id="">Recherche</button>
+        </form>
+    </nav>
+</div>
+</div>
 <div id="conteneur">
     <div id="categ" >
         <h2>Catégories</h2>
@@ -57,18 +72,13 @@
         ?>
     </div>
     <div id="top">
-        <h2>TOP 10</h2>
+
+        <h2>TOP 3</h2>
         <div class="list-group" >
-            <a href="#" class="list-group-item">News</a>
-            <a href="#" class="list-group-item">News</a>
-            <a href="#" class="list-group-item">News</a>
-            <a href="#" class="list-group-item">News</a>
-            <a href="#" class="list-group-item">News</a>
-            <a href="#" class="list-group-item">News </a>
-            <a href="#" class="list-group-item">News</a>
-            <a href="#" class="list-group-item">News</a>
-            <a href="#" class="list-group-item">News</a>
-            <a href="#" class="list-group-item">News</a>
+            <a href="#" class="list-group-item">News 1</a>
+            <a href="#" class="list-group-item">News 2</a>
+            <a href="#" class="list-group-item">News 3</a>
+
         </div>
     </div>
 </div>
@@ -82,7 +92,7 @@
     <div id="nbNews">
         <p  >Nombre de news/page</p>
 
-        <form action="#"  method="get">
+        <form action="index.php?action=nbnpage"  method="get">
         <select name="nbnpage">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -116,9 +126,6 @@
             <?php
             global $NbNewsParPage;
             global $NbNews;
-
-
-            echo "NB NEWS :".$NbNewsParPage;
             if(isset($page)&&isset($NbNews)&&isset($NbNewsParPage)) ;
             for($i=1;$i<=$NbNews/$NbNewsParPage+1;$i++){
                 echo "<li><a href=?page=$i&nbnpage=$NbNewsParPage>$i</a></li>";

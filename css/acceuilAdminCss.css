@@ -9,6 +9,10 @@ header{
     text-align: center;
 
 }
+#conteneurhaut{
+    display: flex;
+    justify-content: space-between;
+}
 #deconnexion{
     padding: 10px;
     margin-left: 20px;
@@ -18,6 +22,18 @@ header{
 #deconnexion:hover{
     background-color: darkred;
 }
+.recherche{
+    padding-right: 20px;
+    text-align: center;
+}
+#btnrecherche{
+    color: #fff;
+    background-color:#337ab7;
+}
+#btnrecherche:hover{
+    background-color: #b92c28;
+}
+
 #conteneur{
     display: flex ;
     justify-content: space-around;

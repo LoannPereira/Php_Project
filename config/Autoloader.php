@@ -1,15 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Clément
- * Date: 16/12/2017
- * Time: 21:25
- */
 
-class Autoloader
+class Autoload
 {
     private static $_instance = null;
-
 
     public static function charger()
     {
@@ -21,14 +14,18 @@ class Autoloader
 
 
         if(!spl_autoload_register(array(self::$_instance, '_autoload'), false)) {
-            throw RuntimeException(sprintf('%s : Could not start the autoload', __CLASS__));
+            throw new RuntimeException(sprintf('%s : Could not start the autoload', __CLASS__));
         }
     }
 
-    public static function stop(){
+    public static function shutDown()
+    {
         if(null !== self::$_instance) {
-            if(!spl_autoload_unregister(array(self::$_instance, '_autoload')))
+
+            if(!spl_autoload_unregister(array(self::$_instance, '_autoload'))) {
                 throw new RuntimeException('Could not stop the autoload');
+            }
+
             self::$_instance = null;
         }
     }
@@ -37,13 +34,17 @@ class Autoloader
     {
         global $rep;
         $filename = $class.'.php';
-        $dir =array('model/','model/metier/','./','config/','controller/','dal/','parser/');
+        $dir =array('./','config/','controller/','model/','dal/','css/','parser/','model/metier/');
+
         foreach ($dir as $d){
             $file=$rep.$d.$filename;
+            //echo $file;
             if (file_exists($file))
             {
-                include($file);
+                include $file;
             }
         }
     }
 }
+
+?>

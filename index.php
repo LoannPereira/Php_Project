@@ -9,7 +9,7 @@ require_once("controller/FrontController.php");
 
 require_once('config/config.php');
 
-require_once('config/Autoloader.php'); Autoloader::charger();
+require_once('config/Autoloader.php');Autoload::charger();
 
 session_start();
 

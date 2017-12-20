@@ -24,6 +24,11 @@ class routes
             'categ'=>['ctrl' =>'controller/CtrlUser.php','action' =>'getNewsCateg'],
             'ADcateg'=>['ctrl' =>'controller/CtrlAdmin.php','action' =>'getNewsCateg'],
             'ADpage'=>['ctrl'=>'controller/CtrlAdmin.php','action' =>'voirNews'],
+            'recherche'=>['ctrl'=>'controller/CtrlUser.php','action'=>'rechercheNews'],
+            'ADrecherche'=>['ctrl'=>'controller/CtrlAdmin.php','action'=>'rechercheNews'],
+            'nbnpage' =>['ctrl'=>'controller/CtrlUser.php',''],
+            'voirrss' =>['ctrl'=> 'controller/CtrlUser.php','action'=>'voirRss']
+
 
         ];
     }

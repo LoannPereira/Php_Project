@@ -12,7 +12,7 @@
 
 include ('../parser/XmlParserExample1.php');
 
-$parser = new XmlParserExample1(dirname(__FILE__).'/../parser/rss.xml');
+$parser = new XmlParserExample1('http://www.bfmtv.com/rss/info/flux-rss/flux-toutes-les-actualites/');
 $parser ->parse();
 $result = $parser ->getResult();
 echo $result;

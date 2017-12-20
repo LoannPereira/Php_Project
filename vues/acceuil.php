@@ -1,11 +1,26 @@
 <html>
 <head>
-   <title>Top10News</title>
+   <title>TopNews</title>
    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/acceuilCss.css" rel="stylesheet">
 </head>
 <body>
 <header>
+
+
+    <div class="recherche">
+    <nav>
+        <p>Rechercher une News</p>
+        <form action="index.php?action=recherche" method="post">
+        <div class="form-group">
+            <input type="text" name="titreRecherche" class="form-control" placeholder="titre de news">
+        </div>
+        <button type="submit" class="btn btn-primary" id="">Recherche</button>
+        </form>
+    </nav>
+    </div>
+
+
     <h1 id="titre">Top10News</h1>
     <form action="index.php?action=connection" method="post" id="connexion">
         <div class="form-group">
@@ -18,6 +33,7 @@
         </div>
         <button type="submit"  class="btn btn-primary">Connexion</button>
     </form>
+
 </header>
 <div id="conteneur">
         <div id="categ" >
@@ -31,6 +47,7 @@
                     <a href="index.php?action=categ&macateg=Jeux-Vidéos" class="list-group-item">Jeux-Vidéos</a>
                 </div>
         </div>
+
         <div id="listenews">
             <div>
 
@@ -64,21 +81,18 @@
             ?>
         </div>
         <div id="top">
-                <h2>TOP 10</h2>
+                <h2>TOP 3</h2>
                 <div class="list-group" >
-                    <a href="#" class="list-group-item">News</a>
-                    <a href="#" class="list-group-item">News</a>
-                    <a href="#" class="list-group-item">News</a>
-                    <a href="#" class="list-group-item">News</a>
-                    <a href="#" class="list-group-item">News</a>
-                    <a href="#" class="list-group-item">News </a>
-                    <a href="#" class="list-group-item">News</a>
-                    <a href="#" class="list-group-item">News</a>
-                    <a href="#" class="list-group-item">News</a>
-                    <a href="#" class="list-group-item">News</a>
+                    <a href="#" class="list-group-item">News 1</a>
+                    <a href="#" class="list-group-item">News 2</a>
+                    <a href="#" class="list-group-item">News 3</a>
+
                 </div>
         </div>
 </div>
+<form action="vues/rss.php"  >
+    <button type="submit" class="btn btn-primary" >flux rss</button>
+</form>
 <footer class="page">
     <nav>
         <ul class="pagination">
@@ -90,13 +104,14 @@
             </li>
             <?php
             global $NbNews, $NbNewsParPage;
-            if(isset($_GET['nbnpage']))$NbNewsParPage=intval($_GET['nbnpage']);
-
+            if(isset($_GET['nbnpage']))
+                $NbNewsParPage=intval($_GET['nbnpage']);
             if(isset($page)&&isset($NbNews)&&isset($NbNewsParPage))
+
             for($i=1; $i<=$NbNews/$NbNewsParPage+$NbNews%$NbNewsParPage; $i++){
                 echo "<li><a href=?page=$i&nbnpage=$NbNewsParPage>$i</a></li>";
             }
-            echo $page.$NbNews.$NbNewsParPage;
+
             ?>
 
             <li>

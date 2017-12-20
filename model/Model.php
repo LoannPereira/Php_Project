@@ -36,8 +36,17 @@ class Model
         return $this->getGateway()->getNbNews();
     }
 
-    public function getNewsCateg(string $categ){
-        $results=$this->getGateway()->recherche($categ);
+    public function getNewsCateg(string $categ,$page){
+        $results=$this->getGateway()->rechercheCateg($categ,$page);
+        $tabnews=[];
+        foreach ($results as $row) {
+            $tabnews[]=new News($row['titre'],$row['date'],$row['description'],$row['lien'],$row['categorie']);
+        }
+        return $tabnews;
+    }
+
+    public function GetNewsTitre(string $titre){
+        $results=$this->getGateway()->rechercheTitre($titre);
         $tabnews=[];
         foreach ($results as $row) {
             $tabnews[]=new News($row['titre'],$row['date'],$row['description'],$row['lien'],$row['categorie']);

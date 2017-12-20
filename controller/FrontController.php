@@ -33,12 +33,12 @@ class FrontController //NE PASSE PAS DE PARAMETRES
                             require_once($this->routes[$action]["ctrl"]);
                             $ctrl =substr(explode("/", $this->routes[$action]["ctrl"])[1], 0, -4);
                             $ctrl = new $ctrl();
+
                             $ctrl->getNewsCateg($macateg);
 
                         }
                         else {
                             require_once($this->routes[$action]["ctrl"]);
-                            echo 'controller = '.$this->routes[$action]["ctrl"];
                             $ctrl =substr(explode("/", $this->routes[$action]["ctrl"])[1], 0, -4);
                             $ctrl= new $ctrl();
                             $ctrl->{$this->routes[$action]["action"]}();
