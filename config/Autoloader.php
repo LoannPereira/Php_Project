@@ -10,9 +10,7 @@ class Autoloader
 {
     private static $_instance = null;
 
-    /**
-     * Call the constructor of the class if it doesn't exist yet.
-     */
+
     public static function charger()
     {
         if(null !== self::$_instance) {
@@ -44,7 +42,7 @@ class Autoloader
             $file=$rep.$d.$filename;
             if (file_exists($file))
             {
-                require_once($file);
+                include($file);
             }
         }
     }

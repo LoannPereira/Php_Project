@@ -20,7 +20,7 @@ class NewsGateway
 
     public function __construct()
     {
-        $this->con=new Connection('mysql:host=localhost;dbname=dblopereira2', 'root', '1234');
+        $this->con=new Connection('mysql:host=localhost;dbname=clguilbert', 'root', '');
 
     }
 
@@ -57,12 +57,14 @@ class NewsGateway
 
     public function voirNews($page)
     {
-        $nbNewsParPage=3;
-        $start = abs(($page-1)*$nbNewsParPage);
+        global $NbNewsParPage;
+        if ($NbNewsParPage==0 && isset($_GET['nbnpage'])) $NbNewsParPage = intval($_GET['nbnpage']);
+        else if($NbNewsParPage==0) $NbNewsParPage=4;
+        $start = abs(($page-1)*$NbNewsParPage);
         $query = "SELECT * FROM news Order by date DESC LIMIT :start,:nbNews;";
         $this->con->executeQuery($query, array(
             ':start' => array($start, PDO::PARAM_INT),
-            ':nbNews' => array($nbNewsParPage, PDO::PARAM_INT)
+            ':nbNews' => array($NbNewsParPage, PDO::PARAM_INT)
         ));
         $results = $this->getCon()->getResults();
 

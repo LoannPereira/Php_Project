@@ -23,16 +23,22 @@ class CtrlAdmin
 
     }
     public function voirNews(){
-        if (isset($_GET['ADpage'])) $page = intval($_GET['ADpage']);
+        if (isset($_GET['page'])) $page = intval($_GET['page']);
         else $page=1;
         $tabnews=$this->modeladmin->voirNews($page);
         $NbNews=$this->modeladmin->cptNews();
-        $NbNewsParPage=3;
-        var_dump($NbNews);
+
         require_once('vues/acceuilAdmin.php');
 
     }
 
+    public function isAdmin(){
+        if (isset($_SESSION['login'])&&isset($_SESSION['role'])){
+            $login=Filtrage::cleanString($_SESSION["login"]);
+            $role=Filtrage::cleanString($_SESSION["role"]);
+            return new Admin($login, $role);}
+        else return null;
+    }
 
     public function getNewsCateg(string $categ){
         if($categ=='all'){
@@ -44,7 +50,11 @@ class CtrlAdmin
             require_once('vues/acceuilAdmin.php');
         }
     }
-
+    public function deconnexion()
+    {
+        $this->modeladmin->deconnexion();
+        header('Location: index.php?page=1');
+    }
 
 
 

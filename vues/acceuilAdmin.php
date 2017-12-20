@@ -7,7 +7,9 @@
 <body>
 <header>
     <h1 id="titre">Top10News</h1>
+    <form action="index.php?action=deconnexion" method="post">
         <button type="submit"  class="btn btn-primary" id="deconnexion">Déconnexion</button>
+    </form>
 
 </header>
 <div id="conteneur">
@@ -79,7 +81,13 @@
     </div>
     <div id="nbNews">
         <p  >Nombre de news/page</p>
-        <select>
+
+        <form action="#"  method="get">
+        <select name="nbnpage">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
             <option value="5">5</option>
             <option value="6">6</option>
             <option value="7">7</option>
@@ -90,7 +98,8 @@
             <option value="12">12</option>
             <option value="13">13</option>
         </select>
-        <button  type="nbNewspage" class="btn btn-primary">Appliquer</button>
+        <button  class="btn btn-primary">Appliquer</button>
+        </form>
     </div>
 </div>
 
@@ -101,13 +110,18 @@
 
             <li>
                 <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
+                    <span  aria-hidden="true">&laquo;</span>
                 </a>
             </li>
             <?php
+            global $NbNewsParPage;
+            global $NbNews;
+
+
+            echo "NB NEWS :".$NbNewsParPage;
             if(isset($page)&&isset($NbNews)&&isset($NbNewsParPage)) ;
-            for($i=1;$i<=$NbNews/$NbNewsParPage+$NbNews%$NbNewsParPage;$i++){     #NB NEWS PAR PAGE DANS CTRL USER ET NEWS GATEWAY
-                echo "<li><a href=?ADpage=$i>$i</a></li>";
+            for($i=1;$i<=$NbNews/$NbNewsParPage+1;$i++){
+                echo "<li><a href=?page=$i&nbnpage=$NbNewsParPage>$i</a></li>";
             }
             ?>
 

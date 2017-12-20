@@ -22,7 +22,7 @@ class AdminGateway
 
     public function __construct()
     {
-        $this->con=new Connection('mysql:host=localhost;dbname=dblopereira2', 'root', '1234');
+        $this->con=new Connection('mysql:host=localhost;dbname=clguilbert', 'root', '');
     }
 
 
@@ -35,7 +35,7 @@ class AdminGateway
             ':login' => array($pseudo, PDO::PARAM_STR)
         ));
         $resultspseudo =$this->getConnect()->getResults();
-        if($resultspseudo[0]['pseudo']==null){
+        if($resultspseudo==null){
             return FALSE;
         }
         else if(hash("sha1", $resultspseudo[0]['mdp'])==$mdp){
@@ -47,13 +47,7 @@ class AdminGateway
         }
     }
 
-    public function voirNews()
-    {
-        $query = "SELECT * FROM news;";
-        $st = $this->getConnect()->executeQuery($query,array());
-        $results = $st->fetchall();
-        return $results;
-    }
+
 
 
 }

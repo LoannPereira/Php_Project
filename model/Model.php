@@ -54,9 +54,4 @@ class Model
         else return FALSE;
 
     }
-
-    public function deconnexion()
-    {
-
-    }
 }

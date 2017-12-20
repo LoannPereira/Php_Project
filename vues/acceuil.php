@@ -89,10 +89,14 @@
                 </a>
             </li>
             <?php
-            if(isset($page)&&isset($NbNews)&&isset($NbNewsParPage)) ;
-            for($i=1;$i<=$NbNews/$NbNewsParPage+$NbNews%$NbNewsParPage;$i++){     #NB NEWS PAR PAGE DANS CTRL USER ET NEWS GATEWAY
-                echo "<li><a href=?page=$i>$i</a></li>";
+            global $NbNews, $NbNewsParPage;
+            if(isset($_GET['nbnpage']))$NbNewsParPage=intval($_GET['nbnpage']);
+
+            if(isset($page)&&isset($NbNews)&&isset($NbNewsParPage))
+            for($i=1; $i<=$NbNews/$NbNewsParPage+$NbNews%$NbNewsParPage; $i++){
+                echo "<li><a href=?page=$i&nbnpage=$NbNewsParPage>$i</a></li>";
             }
+            echo $page.$NbNews.$NbNewsParPage;
             ?>
 
             <li>

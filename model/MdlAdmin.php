@@ -27,13 +27,7 @@ class MdlAdmin
         return $this->gateway;
     }
 
-    public function isAdmin(){//DEPLACER DANS CONTROLLER
-        if (isset($_SESSION['login'])&&isset($_SESSION['role'])){
-            $login=Filtrage::cleanString($_SESSION["login"]);
-            $role=Filtrage::cleanString($_SESSION["role"]);
-            return new Admin($login, $role);}
-            else return null;
-    }
+
 
 
 

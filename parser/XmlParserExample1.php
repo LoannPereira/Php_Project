@@ -52,18 +52,17 @@ class XmlParserExample1 {
         for ($i = 0; $i < $this -> depth; $i++) {
             echo "  ";
         }
-        echo "<p style='color:red'> $name</p>\n";
+       // echo "<p style='color:red'> $name</p>\n";
+
         $this -> depth++;
-        foreach($attrs as $attribute => $text)
-        {
-            $this ->displayAttribute($attribute, $text);
-        }
+
     }
      
     private function displayAttribute($attribute, $text)
     {
         for ($i = 0; $i < $this -> depth; $i++) {
             echo "  ";
+
         }
          
         echo "A - $attribute = $text\n";
@@ -72,21 +71,21 @@ class XmlParserExample1 {
     private function endElement($parser, $name)
     {
         $this -> depth--;
-echo "<p style='color:red'> $name</p>\n";
-
+//echo "<p style='color:red'> $name</p>\n";
+        echo"<br>";
     }
      
     private function characterData($parser, $data)
     {
         $data = trim($data);
          
-        if (strlen($data) > 0)
+        if (strlen($data) >5)
         {
             for ($i = 0; $i < $this -> depth; $i++) {
                 echo "  ";
             }
  
-            echo 'T :'.$data."\n";
+            echo $data."\n";
         }
     }
 }

@@ -6,6 +6,8 @@
  * Time: 21:22
  */
 
+global $rep;
+
 $rep=__DIR__.'/../';
 
 $vues['acceuil']='vues/acceuil.php';
